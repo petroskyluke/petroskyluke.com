@@ -1,0 +1,148 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+}
+
+/* Blue accents */
+a, .navbar-brand, .navbar-light .navbar-nav .nav-link:hover {
+    color: #007BFF;  /* Bootstrap's default blue */
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-color: #007BFF;
+}
+
+/* iPhone toggle styles */
+.theme-switch-wrapper {
+    display: flex;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+.theme-switch {
+    display: inline-block;
+    height: 24px;
+    position: relative;
+    width: 48px;
+}
+
+.theme-switch input {
+    display: none;
+}
+
+.slider {
+    background-color: #ccc;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: 0.4s;
+}
+
+.slider:before {
+    background-color: #fff;
+    bottom: 4px;
+    content: "";
+    height: 16px;
+    left: 4px;
+    position: absolute;
+    transition: 0.4s;
+    width: 16px;
+}
+
+input:checked + .slider {
+    background-color: #007BFF;
+}
+
+input:checked + .slider:before {
+    transform: translateX(24px);
+}
+
+.slider.round {
+    border-radius: 24px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+
+h2 {
+    border-bottom: 2px solid #007BFF;
+    display: inline-block;
+    margin-bottom: 15px;
+    padding-right: 10px;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #222;
+    color: #eee;
+}
+
+body.dark-mode .navbar-light {
+    background-color: #333;
+}
+
+body.dark-mode .navbar-light .navbar-brand,
+body.dark-mode .navbar-light .navbar-nav .nav-link {
+    color: #007BFF;
+}
+
+body.dark-mode a,
+body.dark-mode h2 {
+    color: #007BFF;
+}
+
+body.dark-mode #themeToggle {
+    background-color: #007BFF;
+    color: #fff;
+    border-color: #007BFF;
+}
+
+body.dark-mode #themeToggle:hover {
+    background-color: #0056b3;
+}
+.navbar-brand {
+    font-size: 1.5em;  /* Adjust as needed */
+}
+
+.nav-link {
+    font-size: 1.2em;  /* Adjust as needed */
+}
+.navbar {
+    padding: 1rem 1rem;  /* Adjust as needed */
+}
+.theme-switch {
+    height: 30px; /* Adjust as needed */
+    width: 60px; /* Adjust as needed */
+}
+
+.slider {
+    height: 30px; /* Adjust as needed */
+    width: 60px; /* Adjust as needed */
+}
+
+.slider:before {
+    height: 22px; /* Adjust as needed */
+    width: 22px; /* Adjust as needed */
+    bottom: 4px; /* Adjust as needed */
+    left: 5px; /* Adjust as needed */
+}
+.theme-switch-wrapper {
+    position: relative;
+}
+
+#checkbox {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+

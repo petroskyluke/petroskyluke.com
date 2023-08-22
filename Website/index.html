@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Resume</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css">
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+    <script defer src="scripts.js"></script>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Your Name</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#experience">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+                <div class="theme-switch-wrapper">
+                    <label class="theme-switch" for="checkbox">
+                        <input type="checkbox" id="checkbox" />
+                        <div class="slider round"></div>
+                    </label>
+                </div>                              
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ... (Everything above remains unchanged) ... -->
+
+    <!-- Content Sections -->
+    <div class="container mt-5">
+
+        <!-- About Section -->
+        <section id="about" class="mb-5" data-aos="fade-up">
+            <h2>About Me</h2>
+            <p>
+                Hello! I'm Jane Doe, a web developer with over 5 years of experience in building interactive and
+                responsive web applications. I specialize in front-end development and have a passion for creating
+                visually appealing and user-friendly interfaces.
+            </p>
+            <p>
+                With a background in computer science and a keen eye for design, I bring a unique combination of
+                technical skills and aesthetics to every project.
+            </p>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="mb-5" data-aos="fade-up" data-aos-delay="150">
+            <h2>Experience</h2>
+
+            <h5>Front-end Developer at TechCorp</h5>
+            <p class="text-muted">Jan 2020 - Present</p>
+            <ul>
+                <li>Developed and maintained company website, leading to a 50% increase in user engagement.</li>
+                <li>Collaborated with UX/UI designers to implement responsive web designs.</li>
+                <li>Optimized website performance, achieving a 90+ score on Google's Lighthouse tool.</li>
+            </ul>
+
+            <h5>Web Developer at WebSoft</h5>
+            <p class="text-muted">Jun 2018 - Dec 2019</p>
+            <ul>
+                <li>Developed e-commerce platforms for major clients, integrating payment gateways and inventory
+                    systems.</li>
+                <li>Led a team of 5 developers on various web projects, ensuring timely delivery and quality work.</li>
+            </ul>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="mb-5" data-aos="fade-up" data-aos-delay="300">
+            <h2>Portfolio</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="dummy-image1.jpg" alt="Project 1" class="img-fluid">
+                    <p>Project 1: E-commerce website</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="dummy-image2.jpg" alt="Project 2" class="img-fluid">
+                    <p>Project 2: Blog platform</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="dummy-image3.jpg" alt="Project 3" class="img-fluid">
+                    <p>Project 3: Portfolio site</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" data-aos="fade-up" data-aos-delay="450">
+            <h2>Contact</h2>
+            <p>Feel free to get in touch with me via the contact methods below:</p>
+            <ul>
+                <li><i class="fas fa-envelope"></i> Email: jane.doe@example.com</li>
+                <li><i class="fas fa-phone"></i> Phone: (123) 456-7890</li>
+                <li><i class="fab fa-linkedin"></i> LinkedIn: <a href="#">JaneDoeLink</a></li>
+                <li><i class="fab fa-github"></i> GitHub: <a href="#">JaneDoeGit</a></li>
+            </ul>
+            <ul>
+                <li><i class="fas fa-envelope"></i> Email: jane.doe@example.com</li>
+                <li><i class="fas fa-phone"></i> Phone: (123) 456-7890</li>
+                <li><i class="fab fa-linkedin"></i> LinkedIn: <a href="#">JaneDoeLink</a></li>
+                <li><i class="fab fa-github"></i> GitHub: <a href="#">JaneDoeGit</a></li>
+            </ul>
+        </section>
+    </div>
+
+    <!-- Footer (if you want one) -->
+    <footer class="mt-5">
+        <div class="text-center py-3">
+            © 2023 by Jane Doe. Proudly created with <i class="fas fa-heart"></i>.
+        </div>
+    </footer>
+
+    <!-- JS Libraries -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200,
+        });
+    </script>
+
+</body>
+
+</html>
